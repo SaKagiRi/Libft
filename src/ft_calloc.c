@@ -6,7 +6,7 @@
 /*   By: knakto <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/03 21:59:38 by knakto            #+#    #+#             */
-/*   Updated: 2024/09/06 17:45:48 by knakto           ###   ########.fr       */
+/*   Updated: 2024/09/06 21:44:17 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t	i;
 
 	if ((count >= SIZE_MAX && size >= SIZE_MAX)
-		||((ssize_t)count && (ssize_t)size < 0)
+		|| ((ssize_t)count && (ssize_t)size < 0)
 		|| (ssize_t)count * (ssize_t)size < 0)
 		return (NULL);
 	i = count * size;
