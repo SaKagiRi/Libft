@@ -6,7 +6,7 @@
 /*   By: knakto <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/30 15:39:46 by knakto            #+#    #+#             */
-/*   Updated: 2024/09/03 20:48:46 by knakto           ###   ########.fr       */
+/*   Updated: 2024/09/07 22:43:31 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	len;
 	size_t	i;
 
+	if (!src || !dst)
+		return (0);
 	i = 0;
 	len = 0;
 	while (*(src + len))

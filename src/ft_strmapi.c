@@ -6,7 +6,7 @@
 /*   By: knakto <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 03:13:59 by knakto            #+#    #+#             */
-/*   Updated: 2024/09/05 03:15:14 by knakto           ###   ########.fr       */
+/*   Updated: 2024/09/07 22:40:24 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	i;
 
 	i = 0;
-	if (s == 0)
+	if (!s || !f)
 		return (ft_strdup(""));
 	len = 0;
 	while (*(s + len))

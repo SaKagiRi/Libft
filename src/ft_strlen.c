@@ -6,7 +6,7 @@
 /*   By: knakto <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 01:33:43 by knakto            #+#    #+#             */
-/*   Updated: 2024/09/03 20:49:45 by knakto           ###   ########.fr       */
+/*   Updated: 2024/09/07 22:41:34 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlen(const char *s)
 {
 	size_t	len;
 
+	if (!s)
+		return (0);
 	len = 0;
 	while (*(s + len))
 		len++;

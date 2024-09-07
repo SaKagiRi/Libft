@@ -6,7 +6,7 @@
 /*   By: knakto <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/01 11:28:50 by knakto            #+#    #+#             */
-/*   Updated: 2024/09/03 20:34:02 by knakto           ###   ########.fr       */
+/*   Updated: 2024/09/07 22:49:47 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strchr(const char *s, int c)
 	size_t	i;
 	char	*str;
 
+	if (!s)
+		return (NULL);
 	str = (char *)s;
 	i = 0;
 	while (*(str + i) != '\0')
