@@ -6,7 +6,7 @@
 /*   By: knakto <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 14:05:58 by knakto            #+#    #+#             */
-/*   Updated: 2024/09/07 23:16:35 by knakto           ###   ########.fr       */
+/*   Updated: 2024/09/08 20:35:44 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*tmp;
 
-	if (!*lst || del)
-		return ;
 	while (*lst)
 	{
 		(del)((*lst)->content);
