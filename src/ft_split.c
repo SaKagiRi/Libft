@@ -6,7 +6,7 @@
 /*   By: knakto <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 23:12:48 by knakto            #+#    #+#             */
-/*   Updated: 2024/09/06 17:54:10 by knakto           ###   ########.fr       */
+/*   Updated: 2024/10/30 00:48:07 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,6 +103,7 @@ char	**ft_split(const char *s, char c)
 	str = (char **)malloc(sizeof(char *) * (count + 1));
 	if (str == NULL)
 		return (NULL);
+	str[count + 1] = NULL;
 	str = alloc(str, (char *)s, c, count);
 	return (str);
 }
